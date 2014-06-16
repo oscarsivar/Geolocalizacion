@@ -6,7 +6,7 @@ var http = require('http');
 var app = express();
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
-var port = process.env.VCAP_APP_PORT || 5000; //AppFog usa este puerto, por defecto 3000
+var port = process.env.VCAP_APP_PORT || 5000; //Heroku usa este puerto, por defecto 3000
 
 // Almacén de usuarios
 var users = [];
@@ -27,7 +27,6 @@ app.get('/', function(req, res) {
 });
 
 // Sockets io, ver http://socket.io/
-io.set('transports', ['xhr-polling']); //AppFog usa Nginx
 io.sockets.on('connection', function(socket) {
     // Escuchamos datos
     socket.on('send:coords', function (data) {
