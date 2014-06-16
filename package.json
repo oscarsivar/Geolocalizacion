@@ -1,14 +1,29 @@
 {
-    "name": "mapa-tiempo-real",
-    "description": "Demo de mapa en tiempo real usando Node Js, Expres Js, Socket IO y Leaflet Js",
-    "version": "0.0.1",
-    "author": "David Inga",
-    "scripts": {
-        "start": "node app"
-    },
-    "dependencies": {
-        "express": "3.1.x",
-        "jade": "0.28.x",
-        "socket.io": "0.9.x"
-    }
+  "name": "mapa-tiempo-real",
+  "description": "Demo de mapa en tiempo real usando Node Js, Expres Js, Socket IO y Leaflet Js",
+  "version": "0.0.1",
+  "author": "David Inga",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.1.x",
+    "jade": "0.28.x",
+    "socket.io": "0.9.x"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oscarsivar/Geolocalizacion.git"
+  },
+  "keywords": [
+    "Mapa",
+    "geolocalizacion"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarsivar/Geolocalizacion/issues"
+  },
+  "homepage": "https://github.com/oscarsivar/Geolocalizacion"
 }
