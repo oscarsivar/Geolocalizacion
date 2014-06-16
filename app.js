@@ -27,6 +27,7 @@ app.get('/', function(req, res) {
 });
 
 // Sockets io, ver http://socket.io/
+io.set('transports', ['xhr-polling']); //AppFog usa Nginx
 io.sockets.on('connection', function(socket) {
     // Escuchamos datos
     socket.on('send:coords', function (data) {
