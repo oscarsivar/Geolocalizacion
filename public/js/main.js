@@ -17,7 +17,7 @@ function onDocumentReady() {
 	// Cloudmade Tiles: http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png
 	// Toner Tiles: http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png
 	var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: 'David Inga',
+		attribution: 'Oscar Elias',
 		maxZoom: 18
 	});
 
