@@ -26,7 +26,7 @@ app.get('/', function(req, res) {
     });
 });
 
-app.get('/index.html', function(req, res) {
+app.get('/name.html', function(req, res) {
     res.render('index', {
         'title': 'Mapa en tiempo real',
         'users': users
