@@ -26,6 +26,13 @@ app.get('/', function(req, res) {
     });
 });
 
+app.get('/index.html', function(req, res) {
+    res.render('index', {
+        'title': 'Mapa en tiempo real',
+        'users': users
+    });
+});
+
 // Sockets io, ver http://socket.io/
 io.set('transports', ['xhr-polling']); //AppFog usa Nginx
 io.sockets.on('connection', function(socket) {
